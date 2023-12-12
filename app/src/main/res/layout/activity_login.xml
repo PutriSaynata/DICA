@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cream"
+    tools:context=".RegisterActivity"
+    >
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/back1"
+        android:clickable="true"
+        android:onClick="onImageButtonClick"
+        />
+
+    <ImageView
+        android:id="@+id/makan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="65dp"
+        app:srcCompat="@drawable/login"
+        />
+
+    <TextView
+        android:id="@+id/welback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/back1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Welcome Back!"
+        android:textColor="@color/orange"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/ly1"
+        android:layout_width="match_parent"
+        android:layout_height="233dp"
+        android:layout_marginTop="350dp"
+        android:orientation="vertical"
+        android:padding="50dp">
+
+
+        <EditText
+            android:id="@+id/email1"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_shape"
+            android:backgroundTint="@color/white"
+            android:hint="Enter Your Email"
+            android:paddingLeft="10dp"
+            android:textColor="@color/white" />
+
+
+        <EditText
+            android:id="@+id/confirm1"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_shape"
+            android:backgroundTint="@color/white"
+            android:hint="Confirm Password"
+            android:paddingLeft="10dp"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/register1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ly1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-18dp"
+        android:width="360dp"
+        android:background="@drawable/button_shape"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/register1"
+        android:gravity="center"
+        android:padding="20dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No have an account? "
+            android:fontFamily="@font/poppinsregular"
+            android:textSize="12sp"
+            >
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinssemibold"
+            android:text="Register"
+            android:textColor="@color/orange"
+            android:textSize="12sp"
+            android:clickable="true"
+            android:onClick="onTextViewClick"
+            android:id="@+id/klik_register"
+            >
+
+        </TextView>
+    </LinearLayout>
+
+</RelativeLayout>
